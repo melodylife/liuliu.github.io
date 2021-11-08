@@ -53,6 +53,16 @@ h1 {
   background-color: rgba(55,55,55,.3);
   height: 100%;
 }
+
+.playbuttondiv{
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);     
+ }
 		  
 @-webkit-keyframes blink {
   20%,
@@ -189,9 +199,11 @@ h1 {
 </head>
 <body>
 <div class="masklayer">
-   <audio loop controls>
-     <source src="https://www.sunlangbo.com/hbd.mp3">
+  <div class='playbuttondiv'>
+    <audio loop controls>
+      <source src="https://www.sunlangbo.com/hbd.mp3">
     </audio>
+  </div>
 </div>
 <div class="Happy">
 	<h1>Happy Birthday <br> 
