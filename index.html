@@ -92,8 +92,9 @@ h2 {
   left: 50%;
   top: 1%;
   font-size: 80%;
-  transform: translate(-50%, -50%);    
- 
+  transform: translate(-50%, -50%);
+  animation: spin 1s steps(8) infinite;
+  -webkit-animation: spin 1s steps(8) infinite;
  }
 @-webkit-keyframes spin {
     from {transform: rotate(0deg);}
