@@ -6,7 +6,11 @@
 	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/> 
 	 <!--<embed src="https://www.sunlangbo.com/hbd.mp3" loop="true" autostart="true" width="2" height="0" hidden="true" allow="autoplay"/>-->
-
+	<script>
+    function playaudio(){
+      alert('This is a test');
+    }
+	</script>
 	  <style type="text/css">
 	  	@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 body{
@@ -225,7 +229,7 @@ h2 {
 <body>
 <div class="masklayer">
   <div class='playbuttondiv'>
-    <div class='playbutton' id='playmusic'><h2>&#9835;</h2></div>
+    <div class='playbutton' id='playmusic'><h2 onclick='playaudio()'>&#9835;</h2></div>
   </div>
 </div>
 <div class="Happy">
