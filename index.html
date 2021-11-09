@@ -9,6 +9,7 @@
 	<script>
     function playaudio(){
       audioplayer = document.getElementById('bdaysong');
+      alert(audioplayer.paused.toString())
       if(audioplayer.paused == 0){
         audioplayer.play();
       }
