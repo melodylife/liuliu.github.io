@@ -9,7 +9,13 @@
 	<script>
     function playaudio(){
       audioplayer = document.getElementById('bdaysong');
-      audioplayer.play();
+      if(audioplayer.paused == True){
+        audioplayer.play();
+      }
+      else{
+        audioplayer.pause()
+      }
+      
        alert('This is a test');
     }
 	</script>
@@ -33,7 +39,7 @@ h1 {
   -webkit-animation: blink 5s infinite;
 }
 
-h2 {
+h3 {
    font-size: calc(20px + 9vh);
    line-height: calc(30px + 11vh);
 /* text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
@@ -241,7 +247,7 @@ h2 {
 <body>
 <div class="masklayer">
   <div class='playbuttondiv'>
-    <div class='playbutton' id='playmusic'><h2 onclick='playaudio()'>&#9835;</h2></div>
+    <div class='playbutton' id='playmusic'><h3 onclick='playaudio()'>&#9835;</h2></div>
   </div>
 </div>
 <div class="Happy">
